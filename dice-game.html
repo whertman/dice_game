@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dice Game</title>
+
+    <style>
+        body {
+    background-image: linear-gradient(rgba(0,0,00,0.4), rgba(0,0,0,0.4)),
+    url(/1-HTML-CSS-JavaScript/images/hd-dice-game-on-fire-flame-png-31630802702o0wnsdjmsx.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(226,209,151);
+
+        }
+        h1 {
+            text-align: center;
+            padding-bottom: 75px;
+            margin: auto;
+            font-size: 130px;
+            font-family: 'Orbitron';
+        }
+        h2 {
+            text-align: center;
+            margin: auto;
+            padding-bottom: 15px;
+            font-size: 30px;
+            font-family: 'Orbitron';
+            
+        }
+        div {
+            display: block;
+            margin: auto;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        .btn {
+            box-sizing: border-box;
+            border-radius: 0.3em;
+            cursor: pointer;
+            display: flex;
+            font-size: 24px;
+            line-height: 1;
+            padding: 15px 10px;
+            text-align: center;
+            margin: auto;
+            background: red;
+            font-weight: 700;
+            color: rgb(226,209,151);
+            transition: 4ms;
+        }  
+        #submit:hover {
+            background-color: black
+            
+        }
+        .list {
+            padding: 20px;
+            font-size: 22px;
+        }
+        span {
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+        span.fade {
+            opacity: 1;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+</head>
+<body>
+    
+    <h1 class="fancy">Dice Game</h1>
+    <div>
+    <h2>Rules:</h2>
+        <div class="list">
+        <li>When you click the Roll Dice! button, you will roll up to 10 dice, one at a time.</li>
+        <li>If you roll a 1, game stops and all further rolls are forfeited.</li>
+        <li>If you roll 2, 3, or 4, you win nothing but you get to roll again.</li>
+        <li>If you roll a 5, you win 5 gold coins and you get to roll again.</li>
+        <li>If you roll a 6, you win 6 gold coins and you get to roll again.</li>
+        </div>
+    </ul>
+    </div>
+    
+    <button type="button" class='btn' id='submit' onclick="rollDice()">Roll Dice!</button>
+    <script src="/1-HTML-CSS-JavaScript/js/dice-game.js"></script>
+    
+</body>
+</html>
